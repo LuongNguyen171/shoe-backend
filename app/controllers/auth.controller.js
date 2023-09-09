@@ -1,6 +1,6 @@
 const passport = require('passport');
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const userModel = require('../models/auth.model')
 const token = require('../middlewares/token');
 
