@@ -13,16 +13,16 @@ const billRouter = require('./app/routers/bill.router');
 
 app.use(express.static('public'));
 
-app.engine('.hbs', exphbs.engine({ extname: 'hbs' }));
-app.set('view engine', '.hbs');
-app.set('views', path.join(__dirname, 'app/views'));
+// app.engine('.hbs', exphbs.engine({ extname: 'hbs' }));
+// app.set('view engine', '.hbs');
+// app.set('views', path.join(__dirname, 'app/views'));
 
 // console.log(path.join(__dirname, 'app/views'))
 // console.log(__dirname)
 
-app.get('/', (req, res) => {
-    res.render('forgotPasswordView')
-})
+// app.get('/', (req, res) => {
+//     res.render('forgotPasswordView')
+// })
 
 app.use(cors());
 
